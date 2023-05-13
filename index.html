@@ -33,6 +33,11 @@ body{
 	background-color: rgb(233, 248, 248);
 }
 
+<script>
+    function changeImage(image) 
+    {document.getElementById("myImage").src = image;}
+</script>
+
 </style>
 </head> 	 
 <body>
@@ -135,6 +140,19 @@ body{
 <form action="10주차 학습활동-월간 일정표.html">
 	<input type="submit" value="월간 일정표">
 </form>
+<hr>
+<img onmouseout="this.style.width='100px'"
+     onmouseover="this.style.width='200px'" 
+     src="풀에 강아지.jpg" width="100px" >
+
+<img id="myImage" src="풀에 강아지.jpg" width="100px"
+ onmouseover="changeImage('내가 찍은 배경.jpg')"
+ onmouseout="changeImage('풀에 강아지.jpg')" >
+
+ <img id="test" src="풀에 강아지.jpg"  width="100px">
+ <button onclick="document.getElementById('test').src='내가 찍은 배경.jpg'"> 배경 보기 </button>
+ <button onclick="document.getElementById('test').src='풀에 강아지.jpg'"> 강아지 보기 </button>
+
 
 </body>
 </html>
