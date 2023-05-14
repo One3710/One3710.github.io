@@ -33,12 +33,16 @@ body{
 	background-color: rgb(233, 248, 248);
 }
 
+
+</style>
+
+
 <script>
     function changeImage(image) 
     {document.getElementById("myImage").src = image;}
 </script>
 
-</style>
+
 </head> 	 
 <body>
 <h2>환영합니다! 장재원(20200397)의 홈페이지입니다.</h2><br><span id="내 시간표">1학기 장재원의 시간표</span><hr>
@@ -145,9 +149,9 @@ body{
      onmouseover="this.style.width='200px'" 
      src="풀에 강아지.jpg" width="100px" >
 
-<img id="myImage" src="풀에 강아지.jpg" width="100px"
- onmouseover="changeImage('내가 찍은 배경.jpg')"
- onmouseout="changeImage('풀에 강아지.jpg')" >
+	 <img id="myImage" src="풀에 강아지.jpg" width="100px"
+	 onmouseover="changeImage('내가 찍은 배경.jpg')"
+	 onmouseout="changeImage('풀에 강아지.jpg')">
 
  <img id="test" src="풀에 강아지.jpg"  width="100px">
  <button onclick="document.getElementById('test').src='내가 찍은 배경.jpg'"> 배경 보기 </button>
