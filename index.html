@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@ header, nav, section,aside, footer {border: solid 1px black;}
 header {width: 995px; height: 70px;
 	    margin-top: 10px;
         margin-left: 270px;
+        background-color: yellowgreen;
     }
 
 nav {width: 995px; height: 70px;
@@ -19,18 +21,29 @@ nav {width: 995px; height: 70px;
      margin-left: 270px;
      padding-bottom: 10px;}
 
-section {width: 674px; height: 240px;
+section {width: 670px; height: 690px;
          margin-top: 10px;
          float: left;
-         margin-left: 270px;}
+         margin-left: 270px;
+        background-color: rgb(240, 123, 40);}
 
-aside {width: 290px; height: 240px;
+aside {width: 300px;
+       height: 690px;
        margin-top: 10px;
        float: left;
-       margin-left: 29px;}
+       margin-left: 25px;
+       text-align: center;
+       background-color: whitesmoke;	
+    }
 
-footer {width: 995px; height: 130px;
-        margin-top: 10px;}
+footer {width: 977px; 
+        height: 160px;
+        margin-top: 10px;
+        margin-left: 270px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        background-color: rgb(155, 97, 9);}
 
 .clear {clear: both;}
 
@@ -59,7 +72,7 @@ body{background-color: beige;}
 #logo {
 margin: 5px;
 text-align: center;
-background-color: yellowgreen;
+
 padding: 10px;
 }
 
@@ -144,26 +157,12 @@ a:visited {text-decoration: none; color: black;}
                 <td></td><td>사회봉사의이해<br>-공계순-</td><td></td>
                 <td></td><td></td>
             </tr>
-            <tr>
-                <th>10교시<br>16:30~17:20</th>
-                <td></td><td></td><td></td>
-                <td></td><td></td>
-            </tr>
-            <tr>
-                <th>11교시<br>17:30~18:20</th>
-                <td></td><td></td><td></td>
-                <td></td><td></td>
-            </tr>
-            <tr>
-                <th>12교시<BR>18:30~19:20</th>
-                <td></td><td></td><td></td>
-                <td></td><td>웹프로그래밍<br>-채성욱-</td>
-            </tr>
+            
         </table>
 </section>
 
-<aside>
-  <div class="memo"> Memo</div><br>
+<aside><br><br><br>
+  <div class="memo"> <h1>Memo</h1></div><br>
   <div class="memo"> 1.디콘비 기사 조사</div><br>
   <div class="memo"> 2.세종 텔레콤 해지하기</div><br>
   <div class="memo"> 3.금요일에 웹프로그래밍 회의</div><br>
@@ -173,19 +172,21 @@ a:visited {text-decoration: none; color: black;}
 <div class='clear'></div>
 
 <footer>
-    <div>
-	<img onmouseout="this.style.width='100px'"
-     onmouseover="this.style.width='200px'" 
+  <div> 
+<img onmouseout="this.style.width='100px'"
+     onmouseover="this.style.width='120px'" 
      src="풀에 강아지.jpg" width="100px" >
 
-	 <img id="myImage" src="풀에 강아지.jpg" width="100px"
+<img id="myImage" src="풀에 강아지.jpg" width="100px"
 	 onmouseover="changeImage('내가 찍은 배경.jpg')"
 	 onmouseout="changeImage('풀에 강아지.jpg')">
 
  <img id="test" src="풀에 강아지.jpg"  width="100px">
+ &nbsp;
  <button onclick="document.getElementById('test').src='내가 찍은 배경.jpg'"> 배경 보기 </button>
+ &nbsp;
  <button onclick="document.getElementById('test').src='풀에 강아지.jpg'"> 강아지 보기 </button>
-	</div>
+</div>	
 
 </footer>
 </body>
