@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+table, th, tr, td {
+	border: solid 2px black;
+	border-collapse: collapse;
+	padding: 8px;
+	background-color: azure;
+	
+}
+
+h2{
+	text-align: center;
+	background-color: yellowgreen;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px 20px 20px 290px;
+}	
+
+#내 시간표{
+	text-align: right;
+}
+
+body{
+	background-color: beige;
+}
+
+.요일{
+	background-color: rgb(233, 248, 248);
+}
+
+
+</style>
+
+
+<script>
+    function changeImage(image) 
+    {document.getElementById("myImage").src = image;}
+</script>
+
+
+</head> 	 
+<body>
+<h2>환영합니다! 장재원(20200397)의 홈페이지입니다.</h2><br><span id="내 시간표">1학기 장재원의 시간표</span><hr>
+<p>
+<table>
+	<tr class="요일">
+		<th>요일</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th>
+	</tr>
+	<tr>
+		
+	</tr>
+	<tr>
+		<th>1교시<br>09:30~10:20</th>
+		<td></td><td></td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>2교시<br>10:30~11:20</th>
+		<td></td><td></td><td>경영통계<br>-조상섭-</td>
+		<td>디지털콘텐츠비즈니스개론<br>-김유정-</td><td rowspan="2">웹프로그래밍<br>-채성욱-</td>
+	</tr>
+	<tr>
+		<th>3교시<br>11:30~12:20</th>
+		<td></td><td rowspan="2">디지털콘텐츠비즈니스개론<br>-김유정-</td><td rowspan="2">경영정보시스템<br>-강소라-</td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>4교시<br>12:30~13:20</th>
+		<td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>5교시<br>13:30~14:20</th>
+		<td>경영정보시스템<br>-강소라-</td><td></td><td></td>
+		<td>마케팅의이해<br>-송경석-</td><td rowspan="2">경영통계<br>-조상섭-</td>
+	</tr>
+	<tr>
+		<th>6교시<br>14:30~15:20</th>
+		<td rowspan="2">마케팅의이해<br>-송경석-</td><td></td><td>채플<br>-임지은-</td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>7교시<br>15:30~16:20</th>
+		<td></td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>8교시<br>16:30~17:20</th>
+		<td></td><td></td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>9교시<br>17:30~18:20</th>
+		<td></td><td>사회봉사의이해<br>-공계순-</td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>10교시<br>16:30~17:20</th>
+		<td></td><td></td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>11교시<br>17:30~18:20</th>
+		<td></td><td></td><td></td>
+		<td></td><td></td>
+	</tr>
+	<tr>
+		<th>12교시<BR>18:30~19:20</th>
+		<td></td><td></td><td></td>
+		<td></td><td>웹프로그래밍<br>-채성욱-</td>
+	</tr>
+
+</p>
+
+
+</table>
+<br><hr>
+
+<form action="회원가입 사이트!.html">
+	<input type="submit" value="회원가입">
+</form><br>
+
+<form action="루바토 펜션.html">
+	<input type="submit" value="루바토 펜션 안내">
+</form><br>
+
+<form action="호서 국제 기타 페스티벌.html">
+	<input type="submit" value="호서 국제 기타 페스티벌">
+</form><br>
+
+<form action="8주차 학습활동.html">
+	<input type="submit" value="호서 야간 개장">
+</form><br>
+
+<form action="9주차 학습활동.html">
+	<input type="submit" value="세일 안내장">
+</form><br>
+
+<form action="10주차 학습활동-월간 일정표.html">
+	<input type="submit" value="월간 일정표">
+</form><br>
+
+<form action="11주차 쇼핑몰 판매목록.html">
+	<input type="submit" value="쇼핑몰 판매목록">
+</form><br>
+<hr>
+<img onmouseout="this.style.width='100px'"
+     onmouseover="this.style.width='200px'" 
+     src="풀에 강아지.jpg" width="100px" >
+
+	 <img id="myImage" src="풀에 강아지.jpg" width="100px"
+	 onmouseover="changeImage('내가 찍은 배경.jpg')"
+	 onmouseout="changeImage('풀에 강아지.jpg')">
+
+ <img id="test" src="풀에 강아지.jpg"  width="100px">
+ <button onclick="document.getElementById('test').src='내가 찍은 배경.jpg'"> 배경 보기 </button>
+ <button onclick="document.getElementById('test').src='풀에 강아지.jpg'"> 강아지 보기 </button>
+
+
+</body>
+</html>
